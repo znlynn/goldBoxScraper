@@ -17,7 +17,7 @@ function buildPost($title, $cat, $content) {
 	    'post_status'   => 'publish',
 	));
 	
-	if ($id) {
+	if($id) {
 	
 	    // Set category
 	    wp_set_post_terms($id, $cat, 'category');
